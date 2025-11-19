@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Композит Фест - Профессиональное сообщество участников рынка композитов и полимеров">
+    <title>Композит Фест - Сообщество</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-top">
+            <div class="logo">КОМПОЗИТ ФЕСТ</div>
+            <div class="notification-icon">
+                🔔
+                <div class="notification-badge">3</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="homePage" class="page-content active">
+        <div class="quick-actions">
+            <div class="quick-action-btn" onclick="navigateTo('knowledge')">
+                <span class="icon">📚</span>
+                <span class="label">Знания</span>
+            </div>
+            <div class="quick-action-btn" onclick="navigateTo('community')">
+                <span class="icon">🤝</span>
+                <span class="label">Нетворкинг</span>
+            </div>
+            <div class="quick-action-btn" onclick="navigateTo('marketplace')">
+                <span class="icon">🏭</span>
+                <span class="label">Маркет</span>
+            </div>
+            <div class="quick-action-btn" onclick="navigateTo('knowledge')">
+                <span class="icon">📅</span>
+                <span class="label">События</span>
+            </div>
+        </div>
+
+        <div class="feed-container">
+            <div class="feed-item featured">
+                <div class="feed-header">
+                    <div class="user-avatar founder">ОГ</div>
+                    <div class="user-info">
+                        <div class="user-name">Оксана Григораш <span class="badge">Основатель ХимСнаб Композит</span></div>
+                        <div class="post-time">Сегодня</div>
+                    </div>
+                </div>
+                <div class="feed-content">
+                    <div class="feed-text">Дорогие коллеги! 🎉<br><br>
+Рада приветствовать вас на новой профессиональной площадке <strong>Композит Фест</strong> — месте, где объединяется весь рынок композитов и полимеров России!<br><br>
+Более 20 лет наша компания ХимСнаб Композит развивает композитную отрасль. За эти годы мы увидели, как важно профессиональное общение, обмен опытом и совместное решение задач.<br><br>
+<strong>Композит Фест</strong> — это не просто приложение. Это экосистема для:<br>
+• Производителей композитных материалов и изделий<br>
+• Поставщиков сырья и оборудования<br>
+• Потребителей композитных решений<br>
+• Исследователей и технологов<br><br>
+Здесь мы будем делиться знаниями, находить партнёров, обсуждать технологии и готовиться к главному событию — <strong>Композит Фест 2026</strong>, который пройдёт в сентябре следующего года!<br><br>
+Добро пожаловать в наше сообщество! Давайте вместе развивать композитную отрасль России! 💪</div>
+                    <div class="feed-tags">
+                        <span class="tag">#КомпозитФест2026</span>
+                        <span class="tag">#сообщество</span>
+                        <span class="tag">#ХимСнабКомпозит</span>
+                    </div>
+                </div>
+                <div class="feed-footer">
+                    <div class="feed-action active">❤️ <span>247</span></div>
+                    <div class="feed-action">💬 <span>58</span></div>
+                    <div class="feed-action">↗️ <span>Поделиться</span></div>
+                </div>
+            </div>
+
+            <div class="feed-item">
+                <div class="feed-header">
+                    <div class="user-avatar" style="background: linear-gradient(135deg, #1976d2, #42a5f5);">АС</div>
+                    <div class="user-info">
+                        <div class="user-name">Андрей Соколов <span class="company">ООО "ТехКомпозит"</span></div>
+                        <div class="post-time">2 часа назад</div>
+                    </div>
+                </div>
+                <div class="feed-content">
+                    <div class="feed-text">Коллеги, кто работал с винилэфирными смолами в условиях повышенной химстойкости? Нужен совет по выбору армирующих материалов для резервуара под кислоты.</div>
+                    <div class="feed-tags">
+                        <span class="tag">#вопрос</span>
+                        <span class="tag">#технологии</span>
+                        <span class="tag">#винилэфир</span>
+                    </div>
+                </div>
+                <div class="feed-footer">
+                    <div class="feed-action">❤️ <span>12</span></div>
+                    <div class="feed-action">💬 <span>8</span></div>
+                    <div class="feed-action">↗️ <span>Поделиться</span></div>
+                </div>
+            </div>
+
+            <div class="feed-item">
+                <div class="feed-header">
+                    <div class="user-avatar" style="background: linear-gradient(135deg, #388e3c, #66bb6a);">МП</div>
+                    <div class="user-info">
+                        <div class="user-name">Мария Петрова <span class="company">НИИ Композитов</span></div>
+                        <div class="post-time">5 часов назад</div>
+                    </div>
+                </div>
+                <div class="feed-content">
+                    <div class="feed-text">Завершили серию испытаний новых углепластиковых профилей. Прочностные характеристики превысили ожидания на 23%! 📊 Подробный отчёт в разделе знаний.</div>
+                    <div class="feed-tags">
+                        <span class="tag">#исследования</span>
+                        <span class="tag">#углепластик</span>
+                        <span class="tag">#результаты</span>
+                    </div>
+                </div>
+                <div class="feed-footer">
+                    <div class="feed-action">❤️ <span>89</span></div>
+                    <div class="feed-action">💬 <span>15</span></div>
+                    <div class="feed-action">↗️ <span>Поделиться</span></div>
+                </div>
+            </div>
+
+            <div class="feed-item">
+                <div class="feed-header">
+                    <div class="user-avatar" style="background: linear-gradient(135deg, #f57c00, #ffa726);">ДК</div>
+                    <div class="user-info">
+                        <div class="user-name">Дмитрий Косов <span class="company">КомпозитСтрой</span></div>
+                        <div class="post-time">вчера</div>
+                    </div>
+                </div>
+                <div class="feed-content">
+                    <div class="feed-text">Успешно завершён проект по композитным ограждениям для моста в Казани. 2 км стеклопластиковых перил установлено за 3 недели. Вес конструкции на 60% меньше металлических аналогов!</div>
+                    <div class="feed-tags">
+                        <span class="tag">#кейс</span>
+                        <span class="tag">#инфраструктура</span>
+                        <span class="tag">#стеклопластик</span>
+                    </div>
+                </div>
+                <div class="feed-footer">
+                    <div class="feed-action">❤️ <span>156</span></div>
+                    <div class="feed-action">💬 <span>24</span></div>
+                    <div class="feed-action">↗️ <span>Поделиться</span></div>
+                </div>
+            </div>
+
+            <div class="feed-item">
+                <div class="feed-header">
+                    <div class="user-avatar" style="background: linear-gradient(135deg, #7b1fa2, #ba68c8);">ЕВ</div>
+                    <div class="user-info">
+                        <div class="user-name">Елена Волкова <span class="company">Пультрузия-РФ</span></div>
+                        <div class="post-time">2 дня назад</div>
+                    </div>
+                </div>
+                <div class="feed-content">
+                    <div class="feed-text">Ищем партнёров для совместного проекта по производству композитных опор ЛЭП. Есть технология, производственные мощности и первый заказчик. Нужны поставщики препрегов.</div>
+                    <div class="feed-tags">
+                        <span class="tag">#партнёрство</span>
+                        <span class="tag">#пультрузия</span>
+                        <span class="tag">#проект</span>
+                    </div>
+                </div>
+                <div class="feed-footer">
+                    <div class="feed-action">❤️ <span>67</span></div>
+                    <div class="feed-action">💬 <span>19</span></div>
+                    <div class="feed-action">↗️ <span>Поделиться</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="communityPage" class="page-content">
+        <div class="page-header">
+            <div class="page-title">Сообщество</div>
+            <div class="page-subtitle">1,247 участников • 89 активных тем</div>
+        </div>
+        <div class="section-content">
+            <div class="list-item">
+                <div class="list-item-icon">🤝</div>
+                <div class="list-item-content">
+                    <div class="list-item-title">Бизнес-матчинг</div>
+                    <div class="list-item-subtitle">Поиск партнёров и поставщиков</div>
+                </div>
+                <span class="list-item-arrow">→</span>
+            </div>
+            <div class="list-item">
+                <div class="list-item-icon">💬</div>
+                <div class="list-item-content">
+                    <div class="list-item-title">Технический форум</div>
+                    <div class="list-item-subtitle">89 активных обсуждений</div>
+                </div>
+                <span class="list-item-arrow">→</span>
+            </div>
+            <div class="list-item">
+                <div class="list-item-icon">👥</div>
+                <div class="list-item-content">
+                    <div class="list-item-title">База компаний</div>
+                    <div class="list-item-subtitle">Участники отрасли</div>
+                </div>
+                <span class="list-item-arrow">→</span>
+            </div>
+            <div class="list-item">
+                <div class="list-item-icon">📅</div>
+                <div class="list-item-content">
+                    <div class="list-item-title">Композит Фест 2026</div>
+                    <div class="list-item-subtitle">Сентябрь 2026 • Подробности</div>
+                </div>
+                <span class="list-item-arrow">→</span>
+            </div>
+            <div class="list-item">
+                <div class="list-item-icon">🎯</div>
+                <div class="list-item-content">
+                    <div class="list-item-title">Проектные группы</div>
+                    <div class="list-item-subtitle">Совместные разработки</div>
+                </div>
+                <span class="list-item-arrow">→</span>
+            </div>
+            <div class="list-item">
+                <div class="list-item-icon">💼</div>
+                <div class="list-item-content">
+                    <div class="list-item-title">Вакансии и резюме</div>
+                    <div class="list-item-subtitle">27 открытых позиций</div>
+                </div>
+                <span class="list-item-arrow">→</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="knowledgePage" class="page-content">
+        <div class="page-header">
+            <div class="page-title">База знаний</div>
+            <div class="page-subtitle">Технологии, материалы, стандарты</div>
+        </div>
+        <div class="section-content">
+            <div class="list-item">
+                <div class="list-item-icon">🔬</div>
+                <div class="list-item-content">
+                    <div class="list-item-title">Технологии производства</div>
+                    <div class="list-item-subtitle">Намотка, инфузия, пултрузия, RTM</div>
+                </div>
+                <span class="list-item-arrow">→</span>
+            </div>
+            <div class="list-item">
+                <div class="list-item-icon">📋</div>
+                <div class="list-item-content">
+                    <div class="list-item-title">ГОСТ и стандарты</div>
+                    <div class="list-item-subtitle">Нормативная документация</div>
+                </div>
+                <span class="list-item-arrow">→</span>
+            </div>
+            <div class="list-item">
+                <div class="list-item-icon">🎓</div>
+                <div class="list-item-content">
+                    <div class="list-item-title">Обучающие материалы</div>
+                    <div class="list-item-subtitle">Вебинары и курсы</div>
+                </div>
+                <span class="list-item-arrow">→</span>
+            </div>
+            <div class="list-item">
+                <div class="list-item-icon">📊</div>
+                <div class="list-item-content">
+                    <div class="list-item-title">Кейсы и проекты</div>
+                    <div class="list-item-subtitle">Успешные реализации</div>
+                </div>
+                <span class="list-item-arrow">→</span>
+            </div>
+            <div class="list-item">
+                <div class="list-item-icon">📰</div>
+                <div class="list-item-content">
+                    <div class="list-item-title">Новости отрасли</div>
+                    <div class="list-item-subtitle">Актуальные события</div>
+                </div>
+                <span class="list-item-arrow">→</span>
+            </div>
+            <div class="list-item">
+                <div class="list-item-icon">🔧</div>
+                <div class="list-item-content">
+                    <div class="list-item-title">Справочник материалов</div>
+                    <div class="list-item-subtitle">Смолы, армирующие, наполнители</div>
+                </div>
+                <span class="list-item-arrow">→</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="marketplacePage" class="page-content">
+        <div class="page-header">
+            <div class="page-title">Маркетплейс</div>
+            <div class="page-subtitle">Оборудование, материалы, услуги</div>
+        </div>
+        <div class="section-content">
+            <div class="list-item">
+                <div class="list-item-icon">🧪</div>
+                <div class="list-item-content">
+                    <div class="list-item-title">Смолы и связующие</div>
+                    <div class="list-item-subtitle">Эпоксидные, полиэфирные, винилэфирные</div>
+                </div>
+                <span class="list-item-arrow">→</span>
+            </div>
+            <div class="list-item">
+                <div class="list-item-icon">🏭</div>
+                <div class="list-item-content">
+                    <div class="list-item-title">Оборудование</div>
+                    <div class="list-item-subtitle">Новое и б/у</div>
+                </div>
+                <span class="list-item-arrow">→</span>
+            </div>
+            <div class="list-item">
+                <div class="list-item-icon">🧵</div>
+                <div class="list-item-content">
+                    <div class="list-item-title">Армирующие материалы</div>
+                    <div class="list-item-subtitle">Стекло, углеволокно, арамид</div>
+                </div>
+                <span class="list-item-arrow">→</span>
+            </div>
+            <div class="list-item">
+                <div class="list-item-icon">⚙️</div>
+                <div class="list-item-content">
+                    <div class="list-item-title">Технологические услуги</div>
+                    <div class="list-item-subtitle">Испытания, консалтинг, внедрение</div>
+                </div>
+                <span class="list-item-arrow">→</span>
+            </div>
+            <div class="list-item">
+                <div class="list-item-icon">📦</div>
+                <div class="list-item-content">
+                    <div class="list-item-title">Готовые изделия</div>
+                    <div class="list-item-subtitle">Профили, настилы, конструкции</div>
+                </div>
+                <span class="list-item-arrow">→</span>
+            </div>
+            <div class="list-item">
+                <div class="list-item-icon">🎁</div>
+                <div class="list-item-content">
+                    <div class="list-item-title">Спецпредложения</div>
+                    <div class="list-item-subtitle">Акции и распродажи</div>
+                </div>
+                <span class="list-item-arrow">→</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="profilePage" class="page-content">
+        <div class="page-header">
+            <div class="page-title">Профиль</div>
+            <div class="page-subtitle">Управление аккаунтом</div>
+        </div>
+        <div class="section-content">
+            <div class="profile-card">
+                <div class="profile-header">
+                    <div class="avatar-large">ИИ</div>
+                    <div class="profile-info">
+                        <h2>Иван Иванов</h2>
+                        <p>Технолог • ООО "КомпозитТех"</p>
+                    </div>
+                </div>
+                <div class="stats-row">
+                    <div class="stat-item">
+                        <div class="stat-value">24</div>
+                        <div class="stat-label">Контакты</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">8</div>
+                        <div class="stat-label">Проекты</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">Pro</div>
+                        <div class="stat-label">Статус</div>
+                    </div>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="list-item-icon">🏢</div>
+                <div class="list-item-content">
+                    <div class="list-item-title">Моя компания</div>
+                    <div class="list-item-subtitle">Редактировать профиль</div>
+                </div>
+                <span class="list-item-arrow">→</span>
+            </div>
+            <div class="list-item">
+                <div class="list-item-icon">💼</div>
+                <div class="list-item-content">
+                    <div class="list-item-title">Мои проекты</div>
+                    <div class="list-item-subtitle">8 активных</div>
+                </div>
+                <span class="list-item-arrow">→</span>
+            </div>
+            <div class="list-item">
+                <div class="list-item-icon">🤝</div>
+                <div class="list-item-content">
+                    <div class="list-item-title">Мои контакты</div>
+                    <div class="list-item-subtitle">24 участника</div>
+                </div>
+                <span class="list-item-arrow">→</span>
+            </div>
+            <div class="list-item">
+                <div class="list-item-icon">⚙️</div>
+                <div class="list-item-content">
+                    <div class="list-item-title">Настройки</div>
+                    <div class="list-item-subtitle">Уведомления, приватность</div>
+                </div>
+                <span class="list-item-arrow">→</span>
+            </div>
+            <div class="list-item">
+                <div class="list-item-icon">❤️</div>
+                <div class="list-item-content">
+                    <div class="list-item-title">Избранное</div>
+                    <div class="list-item-subtitle">Сохранённые материалы</div>
+                </div>
+                <span class="list-item-arrow">→</span>
+            </div>
+            <div class="list-item">
+                <div class="list-item-icon">🎟</div>
+                <div class="list-item-content">
+                    <div class="list-item-title">Композит Фест 2026</div>
+                    <div class="list-item-subtitle">Регистрация на мероприятие</div>
+                </div>
+                <span class="list-item-arrow">→</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom-nav">
+        <div class="nav-item active" onclick="switchPage('home')">
+            <div class="nav-icon">🏠</div>
+            <div class="nav-label">Главная</div>
+        </div>
+        <div class="nav-item" onclick="switchPage('community')">
+            <div class="nav-icon">👥</div>
+            <div class="nav-label">Сообщество</div>
+        </div>
+        <div class="nav-item" onclick="switchPage('knowledge')">
+            <div class="nav-icon">📚</div>
+            <div class="nav-label">Знания</div>
+        </div>
+        <div class="nav-item" onclick="switchPage('marketplace')">
+            <div class="nav-icon">🏭</div>
+            <div class="nav-label">Маркет</div>
+        </div>
+        <div class="nav-item" onclick="switchPage('profile')">
+            <div class="nav-icon">👤</div>
+            <div class="nav-label">Профиль</div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
