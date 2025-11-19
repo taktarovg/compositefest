@@ -53,17 +53,44 @@ function showSubpage(subpageId) {
     
     // Показать нужную подстраницу
     const subpageMap = {
+        // Сообщество
         'matching': 'matchingPage',
         'forum': 'forumPage',
         'companies': 'companiesPage',
         'fest2026': 'fest2026Page',
         'projects': 'projectsPage',
-        'vacancies': 'vacanciesPage'
+        'vacancies': 'vacanciesPage',
+        // База знаний
+        'technologies': 'technologiesPage',
+        'standards': 'standardsPage',
+        'education': 'educationPage',
+        'cases': 'casesPage',
+        'news': 'newsPage',
+        'materials': 'materialsPage',
+        // Маркетплейс
+        'resins': 'resinsPage',
+        'equipment': 'equipmentPage',
+        'fibers': 'fibersPage',
+        'services': 'servicesPage',
+        'products': 'productsPage',
+        'offers': 'offersPage'
     };
     
     const pageId = subpageMap[subpageId];
     if (pageId) {
-        document.getElementById(pageId).classList.add('active');
+        const pageElement = document.getElementById(pageId);
+        if (pageElement) {
+            pageElement.classList.add('active');
+        } else {
+            // Если страница не найдена, показываем заглушку
+            alert('Эта страница находится в разработке. Скоро здесь появится контент!');
+            // Вернуться на предыдущую страницу
+            const currentNav = document.querySelector('.nav-item.active');
+            if (currentNav) {
+                currentNav.click();
+            }
+            return;
+        }
     }
     
     // Прокрутка наверх
