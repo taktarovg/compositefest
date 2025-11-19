@@ -73,7 +73,14 @@ function showSubpage(subpageId) {
         'fibers': 'fibersPage',
         'services': 'servicesPage',
         'products': 'productsPage',
-        'offers': 'offersPage'
+        'offers': 'offersPage',
+        // Профиль
+        'mycompany': 'mycompanyPage',
+        'myprojects': 'myprojectsPage',
+        'mycontacts': 'mycontactsPage',
+        'settings': 'settingsPage',
+        'favorites': 'favoritesPage',
+        'festregistration': 'festregistrationPage'
     };
     
     const pageId = subpageMap[subpageId];
