@@ -153,7 +153,7 @@
             <div class="page-subtitle">1,247 участников • 89 активных тем</div>
         </div>
         <div class="section-content">
-            <div class="list-item">
+            <div class="list-item" onclick="showSubpage('matching')">
                 <div class="list-item-icon">🤝</div>
                 <div class="list-item-content">
                     <div class="list-item-title">Бизнес-матчинг</div>
@@ -161,7 +161,7 @@
                 </div>
                 <span class="list-item-arrow">→</span>
             </div>
-            <div class="list-item">
+            <div class="list-item" onclick="showSubpage('forum')">
                 <div class="list-item-icon">💬</div>
                 <div class="list-item-content">
                     <div class="list-item-title">Технический форум</div>
@@ -169,7 +169,7 @@
                 </div>
                 <span class="list-item-arrow">→</span>
             </div>
-            <div class="list-item">
+            <div class="list-item" onclick="showSubpage('companies')">
                 <div class="list-item-icon">👥</div>
                 <div class="list-item-content">
                     <div class="list-item-title">База компаний</div>
@@ -177,7 +177,7 @@
                 </div>
                 <span class="list-item-arrow">→</span>
             </div>
-            <div class="list-item">
+            <div class="list-item" onclick="showSubpage('fest2026')">
                 <div class="list-item-icon">📅</div>
                 <div class="list-item-content">
                     <div class="list-item-title">Композит Фест 2026</div>
@@ -185,7 +185,7 @@
                 </div>
                 <span class="list-item-arrow">→</span>
             </div>
-            <div class="list-item">
+            <div class="list-item" onclick="showSubpage('projects')">
                 <div class="list-item-icon">🎯</div>
                 <div class="list-item-content">
                     <div class="list-item-title">Проектные группы</div>
@@ -193,7 +193,7 @@
                 </div>
                 <span class="list-item-arrow">→</span>
             </div>
-            <div class="list-item">
+            <div class="list-item" onclick="showSubpage('vacancies')">
                 <div class="list-item-icon">💼</div>
                 <div class="list-item-content">
                     <div class="list-item-title">Вакансии и резюме</div>
@@ -395,6 +395,267 @@
                 </div>
                 <span class="list-item-arrow">→</span>
             </div>
+        </div>
+    </div>
+
+    <!-- Демо-страницы подразделов -->
+    
+    <!-- Бизнес-матчинг -->
+    <div id="matchingPage" class="page-content">
+        <div class="page-header">
+            <div class="back-btn" onclick="switchPage('community')">← Назад</div>
+            <div class="page-title">Бизнес-матчинг</div>
+            <div class="page-subtitle">Найдите партнёров для бизнеса</div>
+        </div>
+        <div class="section-content">
+            <div class="info-card">
+                <h3>🎯 Как это работает?</h3>
+                <p>Система автоматически подбирает вам потенциальных партнёров на основе:</p>
+                <ul>
+                    <li>Вашей специализации и интересов</li>
+                    <li>Географии работы</li>
+                    <li>Запросов и предложений</li>
+                </ul>
+            </div>
+            
+            <div class="match-card">
+                <div class="match-header">
+                    <div class="user-avatar" style="background: linear-gradient(135deg, #1976d2, #42a5f5);">ТК</div>
+                    <div class="match-info">
+                        <div class="match-name">ООО "ТехКомпозит"</div>
+                        <div class="match-type">Производитель • Москва</div>
+                    </div>
+                    <div class="match-percent">87%</div>
+                </div>
+                <div class="match-desc">
+                    <strong>Ищут:</strong> Поставщика винилэфирных смол для производства химстойких резервуаров
+                </div>
+                <div class="match-tags">
+                    <span class="tag">винилэфир</span>
+                    <span class="tag">резервуары</span>
+                </div>
+                <button class="btn-primary">Связаться</button>
+            </div>
+
+            <div class="match-card">
+                <div class="match-header">
+                    <div class="user-avatar" style="background: linear-gradient(135deg, #388e3c, #66bb6a);">ПР</div>
+                    <div class="match-info">
+                        <div class="match-name">Пультрузия-РФ</div>
+                        <div class="match-type">Производитель • Санкт-Петербург</div>
+                    </div>
+                    <div class="match-percent">92%</div>
+                </div>
+                <div class="match-desc">
+                    <strong>Предлагают:</strong> Совместную разработку композитных опор ЛЭП. Есть технология и производственные мощности
+                </div>
+                <div class="match-tags">
+                    <span class="tag">пультрузия</span>
+                    <span class="tag">партнёрство</span>
+                </div>
+                <button class="btn-primary">Связаться</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Технический форум -->
+    <div id="forumPage" class="page-content">
+        <div class="page-header">
+            <div class="back-btn" onclick="switchPage('community')">← Назад</div>
+            <div class="page-title">Технический форум</div>
+            <div class="page-subtitle">89 активных обсуждений</div>
+        </div>
+        <div class="section-content">
+            <div class="forum-topic">
+                <div class="topic-icon">🔥</div>
+                <div class="topic-content">
+                    <div class="topic-title">Выбор смолы для вакуумной инфузии</div>
+                    <div class="topic-meta">42 ответа • Последний ответ 2 часа назад</div>
+                </div>
+            </div>
+
+            <div class="forum-topic">
+                <div class="topic-icon">❓</div>
+                <div class="topic-content">
+                    <div class="topic-title">Проблемы с пористостью при намотке</div>
+                    <div class="topic-meta">18 ответов • Последний ответ 5 часов назад</div>
+                </div>
+            </div>
+
+            <div class="forum-topic">
+                <div class="topic-icon">💡</div>
+                <div class="topic-content">
+                    <div class="topic-title">Оптимизация процесса RTM</div>
+                    <div class="topic-meta">29 ответов • Последний ответ вчера</div>
+                </div>
+            </div>
+
+            <button class="btn-primary" style="width: 100%; margin-top: 20px;">+ Создать тему</button>
+        </div>
+    </div>
+
+    <!-- База компаний -->
+    <div id="companiesPage" class="page-content">
+        <div class="page-header">
+            <div class="back-btn" onclick="switchPage('community')">← Назад</div>
+            <div class="page-title">База компаний</div>
+            <div class="page-subtitle">Участники отрасли</div>
+        </div>
+        <div class="section-content">
+            <div class="company-card">
+                <div class="company-header">
+                    <div class="user-avatar founder">ХК</div>
+                    <div class="company-info">
+                        <div class="company-name">ХимСнаб Композит</div>
+                        <div class="company-type">Поставщик • Производитель</div>
+                    </div>
+                </div>
+                <p>Комплексный поставщик композитных материалов. 9 филиалов по России и СНГ.</p>
+                <div class="company-tags">
+                    <span class="tag">смолы</span>
+                    <span class="tag">настилы</span>
+                    <span class="tag">оборудование</span>
+                </div>
+            </div>
+
+            <div class="company-card">
+                <div class="company-header">
+                    <div class="user-avatar" style="background: linear-gradient(135deg, #1976d2, #42a5f5);">ТК</div>
+                    <div class="company-info">
+                        <div class="company-name">ООО "ТехКомпозит"</div>
+                        <div class="company-type">Производитель</div>
+                    </div>
+                </div>
+                <p>Производство композитных резервуаров и емкостей для химической промышленности.</p>
+                <div class="company-tags">
+                    <span class="tag">резервуары</span>
+                    <span class="tag">намотка</span>
+                </div>
+            </div>
+
+            <div class="company-card">
+                <div class="company-header">
+                    <div class="user-avatar" style="background: linear-gradient(135deg, #388e3c, #66bb6a);">НК</div>
+                    <div class="company-info">
+                        <div class="company-name">НИИ Композитов</div>
+                        <div class="company-type">Исследования</div>
+                    </div>
+                </div>
+                <p>Научно-исследовательский институт. Разработка новых композитных материалов.</p>
+                <div class="company-tags">
+                    <span class="tag">R&D</span>
+                    <span class="tag">испытания</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Композит Фест 2026 -->
+    <div id="fest2026Page" class="page-content">
+        <div class="page-header">
+            <div class="back-btn" onclick="switchPage('community')">← Назад</div>
+            <div class="page-title">Композит Фест 2026</div>
+            <div class="page-subtitle">Сентябрь 2026 • Новосибирск</div>
+        </div>
+        <div class="section-content">
+            <div class="fest-hero">
+                <div class="fest-date">Сентябрь 2026</div>
+                <h2>Главное событие композитной отрасли России</h2>
+                <p>Встреча профессионалов, обмен опытом, новые контракты и партнёрства</p>
+            </div>
+
+            <div class="info-card">
+                <h3>🎯 Что вас ждёт?</h3>
+                <ul>
+                    <li><strong>Конференция</strong> — доклады ведущих экспертов</li>
+                    <li><strong>Выставка</strong> — новейшие материалы и технологии</li>
+                    <li><strong>Нетворкинг</strong> — встречи с партнёрами</li>
+                    <li><strong>Мастер-классы</strong> — практические занятия</li>
+                </ul>
+            </div>
+
+            <div class="countdown-card">
+                <div class="countdown-title">До начала мероприятия</div>
+                <div class="countdown-timer">~640 дней</div>
+            </div>
+
+            <button class="btn-primary" style="width: 100%; margin-top: 20px;">Зарегистрироваться</button>
+        </div>
+    </div>
+
+    <!-- Проектные группы -->
+    <div id="projectsPage" class="page-content">
+        <div class="page-header">
+            <div class="back-btn" onclick="switchPage('community')">← Назад</div>
+            <div class="page-title">Проектные группы</div>
+            <div class="page-subtitle">Совместные разработки</div>
+        </div>
+        <div class="section-content">
+            <div class="project-card">
+                <div class="project-badge">Активный</div>
+                <h3>Композитные опоры ЛЭП</h3>
+                <p>Разработка и внедрение композитных опор для линий электропередач</p>
+                <div class="project-stats">
+                    <span>👥 8 участников</span>
+                    <span>💼 3 компании</span>
+                </div>
+                <button class="btn-secondary">Присоединиться</button>
+            </div>
+
+            <div class="project-card">
+                <div class="project-badge recruiting">Набор</div>
+                <h3>Стеклопластиковая арматура</h3>
+                <p>Создание нового типа арматуры с улучшенными характеристиками</p>
+                <div class="project-stats">
+                    <span>👥 5 участников</span>
+                    <span>💼 2 компании</span>
+                </div>
+                <button class="btn-secondary">Присоединиться</button>
+            </div>
+
+            <button class="btn-primary" style="width: 100%; margin-top: 20px;">+ Создать проект</button>
+        </div>
+    </div>
+
+    <!-- Вакансии -->
+    <div id="vacanciesPage" class="page-content">
+        <div class="page-header">
+            <div class="back-btn" onclick="switchPage('community')">← Назад</div>
+            <div class="page-title">Вакансии и резюме</div>
+            <div class="page-subtitle">27 открытых позиций</div>
+        </div>
+        <div class="section-content">
+            <div class="vacancy-card">
+                <div class="vacancy-company">ХимСнаб Композит</div>
+                <h3>Менеджер по продажам</h3>
+                <p>Продажа композитных материалов. Опыт от 2 лет.</p>
+                <div class="vacancy-footer">
+                    <span>📍 Новосибирск</span>
+                    <span>💰 80-120 тыс. руб</span>
+                </div>
+            </div>
+
+            <div class="vacancy-card">
+                <div class="vacancy-company">ТехКомпозит</div>
+                <h3>Технолог композитного производства</h3>
+                <p>Работа с намоткой и вакуумной инфузией. Опыт обязателен.</p>
+                <div class="vacancy-footer">
+                    <span>📍 Москва</span>
+                    <span>💰 100-150 тыс. руб</span>
+                </div>
+            </div>
+
+            <div class="vacancy-card">
+                <div class="vacancy-company">Пультрузия-РФ</div>
+                <h3>Инженер-конструктор</h3>
+                <p>Проектирование композитных изделий. Знание CAD систем.</p>
+                <div class="vacancy-footer">
+                    <span>📍 Санкт-Петербург</span>
+                    <span>💰 90-130 тыс. руб</span>
+                </div>
+            </div>
+
+            <button class="btn-primary" style="width: 100%; margin-top: 20px;">+ Разместить вакансию</button>
         </div>
     </div>
 

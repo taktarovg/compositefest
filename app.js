@@ -46,6 +46,35 @@ function switchPage(page) {
     window.scrollTo(0, 0);
 }
 
+// Функция для открытия подстраниц
+function showSubpage(subpageId) {
+    // Скрыть все страницы
+    document.querySelectorAll('.page-content').forEach(p => p.classList.remove('active'));
+    
+    // Показать нужную подстраницу
+    const subpageMap = {
+        'matching': 'matchingPage',
+        'forum': 'forumPage',
+        'companies': 'companiesPage',
+        'fest2026': 'fest2026Page',
+        'projects': 'projectsPage',
+        'vacancies': 'vacanciesPage'
+    };
+    
+    const pageId = subpageMap[subpageId];
+    if (pageId) {
+        document.getElementById(pageId).classList.add('active');
+    }
+    
+    // Прокрутка наверх
+    window.scrollTo(0, 0);
+    
+    // Показать кнопку "Назад" в Telegram
+    if (tg && tg.BackButton) {
+        tg.BackButton.show();
+    }
+}
+
 // Функция навигации через quick actions
 function navigateTo(section) {
     const pageMap = {
